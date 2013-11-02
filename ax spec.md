@@ -25,11 +25,12 @@ It is a work of mathematics in the public domain.
 
  8  `~`  requires that n so defined be in the range (n1..n2), inclusive.
 
- 9       [a b c] → [a [b c]]
+ 9   [a b c] → [a [b c]]
 
- 10      Symbols have no other semantics.
+ 10  Symbols have no other semantics.
   
- 11	 The lemmas are reduced in ordinary arithmetic. 	
+ 11	 The lemmas are reduced in ordinary arithmetic; c and d refer to atoms.
+ 
 ```
 
 ##Term
