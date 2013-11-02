@@ -31,10 +31,6 @@ A trivial loop, such as Ξ [a] -> Ξ [a], is like a game where the only remainin
 
 Note that detecting all cases of Ko without arbitrary calculation is of course the halting problem. In practice, an Ax interpreter may be made into a Nock interpreter by dispatching on a subset of the operators. 
 
-This is not merely so that we may use Buckminsterfullerene techniques to make a tensegrity computer. There is a more basic reason than
-that: Ax defines several crucial operators in terms of several steps, any one of which may fail. An Ax machine must have the ability to
-back up and try a different rule, to be conformant. 
-
 Since you need the idioms, particularly `if`, to define many of the fundamental operators, the expansions are the second set of statements, after the definition. The definition says what the operators do, the expansions say how they could do it, given the available operators, and the ability to decide when you're tired and quit. 
 
 It would be nice, and is probably inevitable, if all the non-trivial operations are visited within an expansion of 0. That way, you can type [0 0 0] into the reference Ax machine and it will not only run forever but repeatedly visit all definitions in doing so. 
@@ -53,9 +49,9 @@ Which is a marvel, by the way. Every time I've sniffed out an ambiguity or sourc
 
 It is overloading, however. [1 + a] would be [[1] +*[a]], and *a crashes. But it doesn't say [1 + a], does it.
 
-Arguably, our symbol definitions, despite being English, are equivalent to the pseudocode. And indeed our generalized rules, being only one reduction longer, are shorter, line for line,  than the pseudocode plus the operator expansions. Not counting brackets, Nock uses seven symbols, overloads one, and has four variables. We use six symbols, no overloading, five variables, and need an extra symbol to define our extra operator. 
+Arguably, our symbol definitions, despite being English, are equivalent to the pseudocode. And indeed our generalized rules, being only one reduction longer, are shorter, line for line,  than the pseudocode plus the reductions. Not counting brackets, Nock uses seven symbols, overloads one, and has four variables. We use six symbols, no overloading, five variables, and need an extra symbol to define our extra operator. 
 
-We also have the demonstrations, of course. Which I feel add a certain esprit to the spec. 
+We also have the expansions, or will. Which I feel add a certain esprit to the spec. 
 
 It is a little confusing, if conventional, that 'a' is either an atom or a cell, while 'n' is definitely an atom and definitely not the other sort of noun. I trust the reader to follow along, and using "a" for atom and "b c d e", while cool, would add impedence to both understanding the Ax spec per se and comparing it to the Nock spec. 
 
@@ -65,11 +61,11 @@ It's not so bad, really. We also need an additional clarification that partial e
 
 So here's how you read Ax. You've been captivated by alien intelligence, who have sat you down in front of something suspiciously resembling a vintage VT100 terminal. You receive the preamble, and the term. The cursor blinks.
 
-There doesn't appear to be any way out of this...pod, tardis, what have you. Though it is made up in a somewhat surreal and misguided parody of human habitation, you're not sure that the fruit is edible, and don't want to find out. 
+There doesn't appear to be any way out of this...pod, Tardis, what have you. Though it is made up in a somewhat surreal and misguided parody of human habitation, you're not sure that the fruit is edible, and don't want to find out. 
 
 Well, what would you type? You're not a chump, if they wanted to use your letters they'd speak your language. Plus, they just told you "numbers". Practically shouted it. 
 
-So you type zero, and get an infinite loop. Great, this computer crashes on "is". Let's try a cell of zeros: nope, crashes. Well, a cell can be composed into two cells and ok, we have a zero back. 
+So you type zero, and get an infinite loop. Let's try a cell of zeros: nope, crashes. Well, a cell can be composed into two cells and ok, we have a zero back.
 
 Which one did it return? You could just bang away at the keys but this is a delicate operation. [0 1 0] is an infinite loop, [1 0 0] produces 0, [0 0 1] produces..one. Can we do anything else coherent with ones and zeroes? 
 
@@ -132,8 +128,7 @@ Note that all even-numbered operators and idioms have exactly two expansions, th
 
 `5` is the `fz` operator, one of the raisons d'etre for Ax versus Nock. 
 
-Note that in Plan Ax from Conk Space, 5 is `cel`, meaning the distributive demonstration, Ξ [[3 4] [1 2 2] [1 2 3]] → [4 5], produces
-both the remaining operators and a test that produces 1 for the first and 0 for the second. This is a most elegant property to have in such a system. If I wanted a deterministic automaton, it would fully suffice; I consider this the primal Conk.
+Note that in Plan Ax from Conk Space, 5 is `cel`. 
 
 Fully qualified Ax machines are not deterministic, because they aren't colorblind. In addition to Black and White bits, Ax machines must supply Red bits, which are completely different because they come from an actual, high quality source of entropy. Note that, while weird, this is just as well formed as saying "an actual, high quality source of numeric computations", in that you can just hop on the Internet and buy one. Ax machines must have both.
 
@@ -159,7 +154,7 @@ Note that we may generate 6 with Ξ [4 5 [2 3]]. Eventually, or immediately, dep
 
 `6` is the cell operator, `cel`. It returns 0 for a cell and 1 for an atom, as you might expect. Symbols are inspected in this case to see what kind of noun they represent. 
 
-Why six? Well, there are two important kinds of cells in Ax, [a b] and [a b c], as defined in the preamble. There are two groupings of six, [[1 1] [1 1] [1 1]] and [[1 1 1] [1 1 1]]. If you immediately recognize those are syntax errors, you're doing great. Happily, Ax is blessed with exactly three relevant data structures, as shown by the first three lines of the definition: atoms and two cells, which may not be Axed, and 3 cells, which are n cells, and which may be Axed in some cases. 
+Why six? Well, there are two important kinds of cells in Ax, [a b] and [a b c], as defined in the preamble. There are two groupings of six, [[1 1] [1 1] [1 1]] and [[1 1 1] [1 1 1]]. If you immediately recognize those are syntax errors, you're doing great. Happily, Ax is blessed with exactly three relevant data structures, as shown by the first three lines of the reduction: atoms and two cells, which may not be Axed, and 3 cells, which are n cells, and which may be Axed in some cases. 
 
 Those are the axioms. I am totally convinced of 0, 1, 2, and 3, which define Ax space within Conk space. I am pretty sold on 4, 5, and 6, and on the benefits of Xa space and the `a br 0` reduction of 2. 
 
@@ -226,3 +221,5 @@ Well, Ax isn't quite that bad. It has a Ko rule, after all. There are two cases 
 Without expansions, one may not generate the full set of possible operations from a seed. This is a beautiful property in a system, if you're me, and since the expansion Ξ [0 0 0] -> Ξ [0 2 1] may yield (I am convinced) the other operators, it is a beautiful seed for a beautiful system. This is sufficient justification for the automaton; what is mathematics if not elegance, nor elegance if not a species of beauty? 
 
 Utility is perhaps harder to see, but imagine an aging computer in a hostile environment. Though it has megas of cores, many are infected and firewalled, others punctured by radiation or otherwise deranged and useless. The ability to expand a failed reduction may save a calculation, and that's no minor thing. A failed or malfunctioning jet may be similarly unit tested against its expansion, fractally and repeatedly, and substitutes checked for correctness in the same way. 
+
+So that's the Ax machine. Maxwell's equations build each on the others, as Euclid's Axioms, as the Laws of Motion and Thermodynamics. With the Ax ordering of Nock, the operators produce their own sequence. Quod Erat Demonstrandum.

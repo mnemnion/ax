@@ -763,13 +763,13 @@ function mod(subject,argument,trace)
 	end
 end
 
-function grt(subject,argument,trace)
+function les(subject,argument,trace)
 	trace = trace .."18-"
-	print (trace.." grt:")
+	print (trace.." les:")
 	comparators = ev(cons(subject,argument),trace)
 	if (num_p(car(comparators)) and num_p(cdr(comparators))) then
-		report (trace,">? :",comparators,colors.noun)
-		if (car(comparators) > cdr(comparators)) then
+		report (trace,"<? :",comparators,colors.noun)
+		if (car(comparators) < cdr(comparators)) then
 			return 0
 		else 
 			return 1

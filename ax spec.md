@@ -77,7 +77,7 @@ It is a work of mathematics in the public domain.
 
 Ξ [n 2 b]        →   Ξ [n]
 
-Ξ [3 3 [[2 1] [1 2 1]] [0 2 1]] →   [3 4]
+Ξ [3 3 [[2 1] [1 2 1]] [0 2 1]]   →   [3 4]
 
 Ξ [a [b c] d]    →   [Ξ [a b c] Ξ [a d]]
 
@@ -143,9 +143,9 @@ It is a work of mathematics in the public domain.
 
 Ξ [a 17 b]  →  Ξ [a b]  →  [c d]  →  c % d
 
-Ξ [a 18 b]  →  Ξ [a b]  →  [c d]  →  c > d   →  0
+Ξ [a 18 b]  →  Ξ [a b]  →  [c d]  →  c < d   →  0
 
-Ξ [a 18 b]  →  Ξ [a b]  →  [c d]  →  c <= d  →  1
+Ξ [a 18 b]  →  Ξ [a b]  →  [c d]  →  c >= d  →  1
 
 ```
 
@@ -182,7 +182,7 @@ It is a work of mathematics in the public domain.
 15 := mul
 16 := div
 17 := mod
-18 := grt
+18 := lemmas
 ```
 
 ###Expansions
