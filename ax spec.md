@@ -19,7 +19,7 @@ It is a work of mathematics in the public domain.
 
  5  `?`  means the reduction is undefined.
 
- 6  `:=` indicates a noun is a referent of a symbol.
+ 6  `:=` indicates a noun is the referent of a symbol.
 
  7  `+`  refers to the operation on the natural numbers, whose identity is 0.
 
@@ -89,7 +89,7 @@ It is a work of mathematics in the public domain.
 
 Ξ [a 5 b]        →   Ξ [[a σ] b]  
 
-Ξ [a 6 b]        →   Ξ [a b]   →   [c c]   →   0
+Ξ [a 6 b]        →   Ξ [a b]   →   [c d]   →   0
 
 Ξ [a 6 b]        →   Ξ [a b]   →     d     →   1
 
@@ -98,7 +98,7 @@ It is a work of mathematics in the public domain.
 ###Idioms
 
 ```
-Ξ [a 7 b c]        →    Ξ [a 3 b 1 c]
+Ξ [a 7 b c]        →    Ξ [a 3 b 0 c]
 
 Ξ [a 8 b c d]      →    Ξ [a b] → 0 → Ξ [a c]
 
@@ -125,21 +125,21 @@ It is a work of mathematics in the public domain.
 
 ```
 
-Ξ [a 12 b]  →  Ξ [a b]  →    0    →  Ξ [12]
-
 Ξ [a 12 b]  →  Ξ [a b]  →    n    →  n - 1
+
+Ξ [a 12 b]  →  Ξ [a b]  →    0    →  Ξ [12]
 
 Ξ [a 13 b]  →  Ξ [a b]  →  [c d]  →  c + d 
 
-Ξ [a 14 b]  →  Ξ [a b]  →  [c d]  →  c < d  →  Ξ [14]
-
 Ξ [a 14 b]  →  Ξ [a b]  →  [c d]  →  c - d
+
+Ξ [a 14 b]  →  Ξ [a b]  →  [c d]  →  c < d  →  Ξ [14]
 
 Ξ [a 15 b]  →  Ξ [a b]  →  [c d]  →  c * d
 
-Ξ [a 16 0]  →  Ξ [a b]  →  [c d]  →  d = 0  →  Ξ [16]
-
 Ξ [a 16 b]  →  Ξ [a b]  →  [c d]  →  c / d
+
+Ξ [a 16 0]  →  Ξ [a b]  →  [c d]  →  d = 0  →  Ξ [16]
 
 Ξ [a 17 b]  →  Ξ [a b]  →  [c d]  →  c % d
 
@@ -193,10 +193,6 @@ It is a work of mathematics in the public domain.
 etc.
 
 ```
-
-##Appendix: Proofs
-
-**TBD**
 
 ##Afterword: Thanks
 
