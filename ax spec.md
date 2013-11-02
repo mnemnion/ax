@@ -71,9 +71,9 @@ It is a work of mathematics in the public domain.
 
 Ξ [[a b] 2 3]    →   b
 
-Ξ [(a + a) 2 b]      →    Ξ [Ξ [b 2 a] 2 2]
+Ξ [a 2 (b + b)]      →   Ξ [Ξ [a 2 b] 2 2]
 
-Ξ [(a + a + 1) 2 b]  →    Ξ [Ξ [b 2 a] 2 3]
+Ξ [a 2 (b + b + 1)]  →   Ξ [Ξ [a 2 b] 2 3]
 
 Ξ [n 2 b]        →   Ξ [n]
 
