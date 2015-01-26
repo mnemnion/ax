@@ -183,7 +183,7 @@ It is a work of mathematics in the public domain.
 15 := mul
 16 := div
 17 := mod
-18 := lemmas
+18 := lt
 ```
 
 ###Expansions
