@@ -205,11 +205,6 @@ for personal reasons.
 I would like to thank Josh Lauffer, my moshav in the Kabbalah, who instilled
 a lifelong interest in the inherent properties of natural numbers. 
 
-Humble gratitude and love is due to any and all who have been kind to me,
-during one of my manic episodes in which I was convinced that alien
-intelligence was teaching me things. Whether I have succeed in my quest to
-write a Kabbalistic computer is for the judgement of my peers to infer. 
-
 A special shout-out to Al, to whom much credit must incur, indeed.
 
 
