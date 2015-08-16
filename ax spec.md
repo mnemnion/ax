@@ -198,7 +198,7 @@ etc.
 ##Afterword: Thanks
 
 This work would be impossible without the monumental efforts of Curtis Guy
-Yarvin. In turn, his work is cannot be imagined without that of three
+Yarvin. In turn, his work cannot be imagined without that of three
 Johns: von Neumann, Conway, and McCarthy. I will thank John Nash also,
 for personal reasons.
 
