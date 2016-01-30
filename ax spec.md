@@ -161,8 +161,8 @@ It is a work of mathematics in the public domain.
 
 0  := is
 1  := inc
-2  := ax
-3  := br
+2  := br
+3  := ax
 4  := eq
 5  := fz
 6  := cel
