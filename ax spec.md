@@ -37,7 +37,7 @@ It is a work of mathematics in the public domain.
 
 ```
 
-~(1..256) := σ 
+~(0..255) := σ 
 
 ```
 
