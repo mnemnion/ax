@@ -1,10 +1,13 @@
-#Ax spec
+# Ax spec
 
-This text specifies Ax, a cellular automaton for general purpose computation.
+T
+his text specifies Ax, a cellular automaton for general purpose computation.
 
 It is a work of mathematics in the public domain.
 
-##Preamble 
+
+## Preamble 
+
 
 ```
  0   A noun is either an atom or a cell. An atom is any natural number.
@@ -33,7 +36,9 @@ It is a work of mathematics in the public domain.
  
 ```
 
+
 ##Term
+
 
 ```
 
@@ -41,9 +46,12 @@ It is a work of mathematics in the public domain.
 
 ```
 
-##Reduction
+
+## Reduction
+
 
 ### Axioms
+
 
 ```
 Ξ [0]  →  Ξ [0]  
@@ -96,7 +104,9 @@ It is a work of mathematics in the public domain.
 
 ```
 
-###Idioms
+
+### Idioms
+
 
 ```
 Ξ [a 7 b c]        →    Ξ [a 3 b 0 c]
@@ -115,14 +125,17 @@ It is a work of mathematics in the public domain.
 
 ```
 
-###Crash default
+
+### Crash default
+
 
 ```
 Ξ [a] → Ξ [a]
 ```
 
 
-###Lemmas
+### Lemmas
+
 
 ```
 
@@ -151,10 +164,11 @@ It is a work of mathematics in the public domain.
 ```
 
 
+## Expansion
 
-##Expansion
 
-###Terms
+### Terms
+
 
 ```
 7 operators
@@ -186,7 +200,8 @@ It is a work of mathematics in the public domain.
 18 := lt
 ```
 
-###Expansions
+### Expansions
+
 
 ```
 Ξ [a 12 b]  →  Ξ [b [cnk [is 0] [cnk [is [if [eq [br 7] [up br 6]] [br 6] [arm 2 [[br 2] [up br 6] [br 7]]]]] [arm 2 br 1]]]]
@@ -195,7 +210,10 @@ etc.
 
 ```
 
-##Afterword: Thanks
+
+
+## Afterword: Thanks
+
 
 This work would be impossible without the monumental efforts of Curtis Guy
 Yarvin. In turn, his work cannot be imagined without that of three
@@ -206,6 +224,9 @@ I would like to thank Josh Lauffer, my moshav in the Kabbalah, who instilled
 a lifelong interest in the inherent properties of natural numbers. 
 
 A special shout-out to Al, to whom much credit must incur, indeed.
+
+
+#### Version 63K
 
 
 
