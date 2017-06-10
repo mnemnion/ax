@@ -31,7 +31,7 @@ It is a work of mathematics in the public domain.
 
  10  Symbols have no other semantics.
   
- 11	 The lemmas are reduced in ordinary arithmetic; c and d refer to atoms.
+ 11  The lemmas are reduced in ordinary arithmetic; c and d refer to atoms.
  
 ```
 
@@ -225,7 +225,7 @@ a lifelong interest in the inherent properties of natural numbers.
 A special shout-out to Al, to whom much credit must incur, indeed.
 
 
-#### Version 63K
+#### Version 62K
 
 
 
