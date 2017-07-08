@@ -225,7 +225,7 @@ a lifelong interest in the inherent properties of natural numbers.
 A special shout-out to Al, to whom much credit must incur, indeed.
 
 
-#### Version 62K
+#### Version 61K
 
 
 
