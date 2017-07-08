@@ -114,7 +114,7 @@ It is a work of mathematics in the public domain.
 
 Ξ [a 8 b c d]      →    Ξ [a b] → 0 → Ξ [a d]
 
-Ξ [9 b c]          →    Ξ [a 7 [[7 [2 1] b] 2 1] c]
+Ξ [a 9 b c]          →    Ξ [a 7 [[7 [2 1] b] 2 1] c]
 
 Ξ [a 10 b c]       →    Ξ [a c]
 
@@ -225,7 +225,7 @@ a lifelong interest in the inherent properties of natural numbers.
 A special shout-out to Al, to whom much credit must incur, indeed.
 
 
-#### Version 62K
+#### Version 61K
 
 
 
