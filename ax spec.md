@@ -1,5 +1,6 @@
 # Ax spec
 
+
 This text specifies Ax, a cellular automaton for general purpose computation.
 
 It is a work of mathematics in the public domain.
@@ -7,41 +8,30 @@ It is a work of mathematics in the public domain.
 
 ## Preamble 
 
-
 ```
  0   A noun is either an atom or a cell.
  
  1   An atom is any natural number.
 
  2   A cell is an ordered pair of nouns.
+
+ 3  `Ξ` means to perform a rewrite as defined by this specification.    
+
+ 4   n refers to any atom.  a, b, c, and d refer to nouns. 
  
- 3   n refers to any atom. a, b, c, and d refer to nouns. 
+ 5   σ refers to either 0 or 1, discovered at the moment of reduction.
+ 
+ 6   [a b c] → [a [b c]]
 
- 4  `Ξ` means to perform a rewrite as defined by this specification.    
+ 7  `→`  shows the steps of a reduction.  All must be completed.
 
- 5  `→`  shows the steps of such a reduction. All must be completed.
+ 8  `?`  means the reduction is undefined.
 
- 6  `?`  means the reduction is undefined.
+ 9  `+`  refers to the operation on the natural numbers, whose identity is 0.
 
- 7  `:=` indicates a noun is the referent of a symbol.
-
- 8  `+`  refers to the operation on the natural numbers, whose identity is 0.
-
- 9  `~`  requires that n so defined be in the range (n1..n2), inclusive.
-
- 10   [a b c] → [a [b c]]
+ 10  The lemmas are reduced in ordinary arithmetic.  m refers to any atom.
 
  11  Symbols have no other semantics.
-```
-
-
-## Term
-
-
-```
-
-~(0..1) := σ 
-
 ```
 
 
@@ -49,7 +39,6 @@ It is a work of mathematics in the public domain.
 
 
 ### Axioms
-
 
 ```
 Ξ [0]  →  Ξ [0]  
@@ -105,7 +94,6 @@ It is a work of mathematics in the public domain.
 
 ### Idioms
 
-
 ```
 Ξ [a 7 b c]        →    Ξ [a 3 b 0 c]
 
@@ -126,7 +114,6 @@ It is a work of mathematics in the public domain.
 
 ### Crash default
 
-
 ```
 Ξ [a] → Ξ [a]
 ```
@@ -134,78 +121,37 @@ It is a work of mathematics in the public domain.
 
 ### Lemmas
 
-
 ```
 
 Ξ [a 12 b]  →  Ξ [a b]  →    n    →  n - 1
 
 Ξ [a 12 b]  →  Ξ [a b]  →    0    →  Ξ [12]
 
-Ξ [a 13 b]  →  Ξ [a b]  →  [c d]  →  c + d 
+Ξ [a 13 b]  →  Ξ [a b]  →  [n m]  →  n + m 
 
-Ξ [a 14 b]  →  Ξ [a b]  →  [c d]  →  c - d
+Ξ [a 14 b]  →  Ξ [a b]  →  [n m]  →  n - m
 
-Ξ [a 14 b]  →  Ξ [a b]  →  [c d]  →  c < d  →  Ξ [14]
+Ξ [a 14 b]  →  Ξ [a b]  →  [n m]  →  n < m  →  Ξ [14]
 
-Ξ [a 15 b]  →  Ξ [a b]  →  [c d]  →  c * d
+Ξ [a 15 b]  →  Ξ [a b]  →  [n m]  →  n * d
 
-Ξ [a 16 b]  →  Ξ [a b]  →  [c d]  →  c / d
+Ξ [a 16 b]  →  Ξ [a b]  →  [n m]  →  n / m
 
-Ξ [a 16 0]  →  Ξ [a b]  →  [c d]  →  d = 0  →  Ξ [16]
+Ξ [a 16 0]  →  Ξ [a b]  →  [n m]  →  m = 0  →  Ξ [16]
 
-Ξ [a 17 b]  →  Ξ [a b]  →  [c d]  →  c % d
+Ξ [a 17 b]  →  Ξ [a b]  →  [n m]  →  n % m
 
-Ξ [a 18 b]  →  Ξ [a b]  →  [c d]  →  c < d   →  1
+Ξ [a 18 b]  →  Ξ [a b]  →  [n m]  →  n <= m   →  1
 
-Ξ [a 18 b]  →  Ξ [a b]  →  [c d]  →  c >= d  →  0
+Ξ [a 18 b]  →  Ξ [a b]  →  [n m]  →  n > m  →  0
 
 ```
 
 
 ## Expansion
 
-
-### Terms
-
-
 ```
-7 operators
-
-0  := is
-1  := inc
-2  := br
-3  := ax
-4  := eq
-5  := fz
-6  := cel
-
-5 idioms
-
-7  := cmp
-8  := if
-9  := cnk
-10 := put
-11 := arm
-
-7 lemmas
-
-12 := dec
-13 := add
-14 := sub
-15 := mul
-16 := div
-17 := mod
-18 := lt
-```
-
-### Expansions
-
-
-```
-Ξ [a 12 b]  →  Ξ [b [cnk [is 0] [cnk [is [if [eq [br 7] [up br 6]] [br 6] [arm 2 [[br 2] [up br 6] [br 7]]]]] [arm 2 br 1]]]]
-
-etc.
-
+TBD
 ```
 
 
@@ -224,7 +170,7 @@ a lifelong interest in the inherent properties of natural numbers.
 A special shout-out to Al, to whom much credit must incur, indeed.
 
 
-#### Version 61K
+#### Version 60K
 
 
 
