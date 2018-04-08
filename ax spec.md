@@ -9,29 +9,29 @@ It is a work of mathematics in the public domain.
 ## Preamble 
 
 ```
- 0   A noun is either an atom or a cell.
+  0   A noun is either an atom or a cell.
  
- 1   An atom is any natural number.
+  1   An atom is any natural number.
 
- 2   A cell is an ordered pair of nouns.
+  2   A cell is an ordered pair of nouns.
 
- 3  `Ξ` means to perform a rewrite as defined by this specification.    
+  3   Ξ  means to perform a rewrite as defined by this specification.    
 
- 4   n refers to any atom.  a, b, c, and d refer to nouns. 
+  4   n  refers to any atom.  a, b, c, and d refer to nouns. 
  
- 5   σ refers to either 0 or 1, discovered at the moment of reduction.
+  5   σ  refers to either 0 or 1, discovered at the moment of reduction.
  
- 6   [a b c] → [a [b c]]
+  6   [a b c] → [a [b c]]
 
- 7  `→`  shows the steps of a reduction.  All must be completed.
+  7   →  shows the steps of a reduction.  All must be completed.
 
- 8  `?`  means the reduction is undefined.
+  8   ?  means the reduction is undefined.
 
- 9  `+`  refers to the operation on the natural numbers, whose identity is 0.
+  9   +  refers to the operation on the natural numbers, whose identity is 0.
 
- 10  The lemmas are reduced in ordinary arithmetic.  m refers to any atom.
+ 10   The lemmas are reduced in ordinary arithmetic.  m refers to any atom.
 
- 11  Symbols have no other semantics.
+ 11   Symbols have no other semantics.
 ```
 
 
