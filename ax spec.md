@@ -9,30 +9,29 @@ It is a work of mathematics in the public domain.
 
 
 ```
- 0   A noun is either an atom or a cell. An atom is any natural number.
-
- 1   A cell is an ordered pair of nouns.
+ 0   A noun is either an atom or a cell.
  
- 2   n refers to any atom. a, b, c, and d refer to nouns. 
+ 1 An atom is any natural number.
 
- 3  `Ξ` means to perform a rewrite as defined by this specification.    
-
- 4  `→`  shows the steps of such a reduction. All must be completed.
-
- 5  `?`  means the reduction is undefined.
-
- 6  `:=` indicates a noun is the referent of a symbol.
-
- 7  `+`  refers to the operation on the natural numbers, whose identity is 0.
-
- 8  `~`  requires that n so defined be in the range (n1..n2), inclusive.
-
- 9   [a b c] → [a [b c]]
-
- 10  Symbols have no other semantics.
-  
- 11  The lemmas are reduced in ordinary arithmetic; c and d refer to atoms.
+ 2   A cell is an ordered pair of nouns.
  
+ 3   n refers to any atom. a, b, c, and d refer to nouns. 
+
+ 4  `Ξ` means to perform a rewrite as defined by this specification.    
+
+ 5  `→`  shows the steps of such a reduction. All must be completed.
+
+ 6  `?`  means the reduction is undefined.
+
+ 7  `:=` indicates a noun is the referent of a symbol.
+
+ 8  `+`  refers to the operation on the natural numbers, whose identity is 0.
+
+ 9  `~`  requires that n so defined be in the range (n1..n2), inclusive.
+
+ 10   [a b c] → [a [b c]]
+
+ 11  Symbols have no other semantics.
 ```
 
 
