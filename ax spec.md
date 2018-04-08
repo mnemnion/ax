@@ -11,7 +11,7 @@ It is a work of mathematics in the public domain.
 ```
  0   A noun is either an atom or a cell.
  
- 1 An atom is any natural number.
+ 1   An atom is any natural number.
 
  2   A cell is an ordered pair of nouns.
  
