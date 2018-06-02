@@ -112,13 +112,6 @@ It is a work of mathematics in the public domain.
 ```
 
 
-### Crash default
-
-```
-Ξ [a] → Ξ [a]
-```
-
-
 ### Lemmas
 
 ```
@@ -145,6 +138,13 @@ It is a work of mathematics in the public domain.
 
 Ξ [a 18 b]  →  Ξ [a b]  →  [n m]  →  n > m  →  0
 
+```
+
+
+### Crash default
+
+```
+Ξ [a] → Ξ [a]
 ```
 
 
