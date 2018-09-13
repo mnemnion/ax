@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # On Truth and Falsehood in Relation to the Natural Numbers
 
 A [Boolean algebra](https://en.wikipedia.org/wiki/Boolean_algebra) is one in which there are only two variables, with two basic operations upon them. Due to the algebra's root in logic, these variables are conventionally denoted **False** and **True**, which are represented with the numerals **0** and **1**, in the normal case.
