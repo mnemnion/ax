@@ -353,23 +353,6 @@ end
 
 
 
-fold_table = 	{[8] = "𝍢",
-                 [16] = "𝍥",
-                 [32] = "𝍦",
-                 [64] = "𝍧",
-                 [128] = "𝍨",
-                 [256] = "𝍨",
-                 [512] = "𝍩",
-                 [1024] = "𝍪",
-                 [2048] = "𝍫",
-                 [4096] = "𝍬",
-                 [8192] = "𝍮",
-                 [16384] = "𝍯",
-                 [32768] = "𝍰",
-                 [65536] = "𝍱"}
-
-fold_table = janus(fold_table)
-
 function report(trace, report, noun, color) -- part of tracer
 	print (trace.."  "..report.."  "..prt_as(noun,color))
 end
