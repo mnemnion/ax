@@ -132,7 +132,7 @@ It is a work of mathematics in the public domain.
 
 Ξ [a 16 0]  →  Ξ [a b]  →  [n m]  →  m = 0  →  Ξ [16]
 
-Ξ [a 17 b]  →  Ξ [a b]  →  [n m]  →  n % m
+Ξ [a 17 b]  →  Ξ [a b]  →  [c d]  →  m = c + dn → m
 
 Ξ [a 18 b]  →  Ξ [a b]  →  [n m]  →  n <= m   →  1
 
