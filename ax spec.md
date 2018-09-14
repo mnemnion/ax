@@ -29,7 +29,7 @@ It is a work of mathematics in the public domain.
 
   9   +  refers to the operation on the natural numbers, whose identity is 0.
 
- 10   The lemmas are reduced in ordinary arithmetic.  m refers to any atom.
+ 10   The lemmas are reduced in ordinary arithmetic.  m, p, and q refer to any atom.
 
  11   Symbols have no other semantics.
 ```
@@ -132,7 +132,7 @@ It is a work of mathematics in the public domain.
 
 Ξ [a 16 0]  →  Ξ [a b]  →  [n m]  →  m = 0  →  Ξ [16]
 
-Ξ [a 17 b]  →  Ξ [a b]  →  [c d]  →  m = c + dn → m
+Ξ [a 17 b]  →  Ξ [a b]  →  [n m]  →  q = n + m * p → m
 
 Ξ [a 18 b]  →  Ξ [a b]  →  [n m]  →  n <= m   →  1
 
