@@ -170,7 +170,7 @@ a lifelong interest in the inherent properties of natural numbers.
 A special shout-out to Al, to whom much credit must incur, indeed.
 
 
-#### Version 60K
+#### Version 59K
 
 
 
