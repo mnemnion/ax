@@ -1,4 +1,4 @@
-#Commentary on the Ax spec.
+# Commentary on the Ax spec.
 
 ## Preface
 
@@ -57,7 +57,7 @@ It is a little confusing, if conventional, that 'a' is either an atom or a cell,
 
 It's not so bad, really. We also need an additional clarification that partial expansions of a line are not allowed. 
 
-##Mythos.
+## Mythos.
 
 So here's how you read Ax. You've been captivated by alien intelligence, who have sat you down in front of something suspiciously resembling a vintage VT100 terminal. You receive the preamble, and the term. The cursor blinks.
 
@@ -81,7 +81,7 @@ branches out fractally, resolves itself in some mysterious way at the limit, and
 non-deterministic behavior. In Nock, numbers are derived from nouns, choices are absolute, and your result is either error or 
 truth.
 
-##Axioms
+## Axioms
 
 ### Zero
 
@@ -172,13 +172,13 @@ Nock calls these macros, and defines them as such, though we are advised by the 
 
 I could make a firm case for `dec` as consonant to `inc` and `arm` as consonant to `br`, giving an opposite mapping. But the lemmas come after the idioms, and `dec` is clearly a lemma, and that is that. Certainly, the Nock tutorial shows that `dec` may be (somewhat) compactly specified in terms of the axioms.
 
-##Lemmas 
+## Lemmas 
 
 Ax comes equipped with the operations you'll need to have a reasonable Big O on integer algorithms.
 
 You're welcome.
 
-##Distinctions between Nock and Ax.
+## Distinctions between Nock and Ax.
 
 There are four changes between Nock and Ax: the permutation of the operations, the addition of `fz`, `br 0`, and the `put` operator, to list them in order of seriousness. I have made the case, I believe, that the permutations put the jewel in the heart of the lotus. Perhaps we merely gild the lily. This is a matter of taste, not semantics, but without taste, Nock is pointless. I have devoted a number of paragraphs to `fz` already. Let's discuss `br 0` and `put`.
 
@@ -209,7 +209,7 @@ Importantly, this is defined at a higher level. It will be the canonical way to 
 The main reason for this is that the intricacy of these address spaces will make them in effect kernel-level abstractions. They will end up just as frozen as Ax will, but consequent to that, and with a longer annealing phase. 
 
 
-##Philosophy
+## Philosophy
 
 Well and good, and we all love an elegant mathematical structure. What's the purpose of some of this? Why an Ax machine, which is inductive, nondeterministic, and redundant, versus a Conk machine, which is crisp, deductive, and minimal?
 
